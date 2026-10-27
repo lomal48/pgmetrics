@@ -352,6 +352,7 @@ type collector struct {
 	logSpan      uint
 	currLog      pgmetrics.LogEntry
 	rxPrefix     *regexp.Regexp
+	logTZ        *time.Location
 	mode         string // "postgres", "pgbouncer" or "pgpool"
 }
 
